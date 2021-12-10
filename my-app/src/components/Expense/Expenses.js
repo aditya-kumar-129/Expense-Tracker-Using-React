@@ -1,10 +1,10 @@
 import ExpenseItem from "./ExpenseItem";
-import './Expenses.css'
+import "./Expenses.css";
 import Card from "../UI/Card";
 
-// If you ever get stuck for finding the path then type ./ 
+// If you ever get stuck for finding the path then type ./
 // as soon as you type / Visual studio code will show you the all the js file present in that directry
-function Expenses(props) {
+const Expenses = (props) => {
   return (
     <Card className="expenses">
       <ExpenseItem
@@ -29,6 +29,6 @@ function Expenses(props) {
       />
     </Card>
   );
-}
+};
 
 export default Expenses;
