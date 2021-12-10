@@ -1,9 +1,8 @@
 import './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate';
-import Card from './Card';
-
-function ExpenseItem (props) {
-  
+import Card from '../UI/Card'
+function ExpenseItem (props) 
+{
   return(
     <Card className="expense-item">
       {/* <div>{expenseDate.toISOString()}</div> */}

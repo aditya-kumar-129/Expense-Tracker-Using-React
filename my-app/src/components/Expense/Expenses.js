@@ -1,7 +1,9 @@
 import ExpenseItem from "./ExpenseItem";
 import './Expenses.css'
-import Card from "./Card";
+import Card from "../UI/Card";
 
+// If you ever get stuck for finding the path then type ./ 
+// as soon as you type / Visual studio code will show you the all the js file present in that directry
 function Expenses(props) {
   return (
     <Card className="expenses">
