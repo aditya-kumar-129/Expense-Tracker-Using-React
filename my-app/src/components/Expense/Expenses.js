@@ -21,6 +21,7 @@ const Expenses = (props) => {
       />
       {props.expenses.map((single_object) => (
         <ExpenseItem
+          key={single_object.id}
           title={single_object.title}
           amount={single_object.amount}
           date={single_object.date}
@@ -31,5 +32,8 @@ const Expenses = (props) => {
 };
 
 export default Expenses;
+// Have a llok on the below link in order to remove the link 
+// https://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js
+
 
 // doubt:- generally we use ()=>{} pattern for arrow function but in this case we are using ()=>() What is the reason behind this??
