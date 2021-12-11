@@ -13,6 +13,7 @@ const Expenses = (props) => {
     setFilteredYear(selectedYear);
   };
 
+  // https://upmostly.com/tutorials/react-filter-filtering-arrays-in-react-with-examples
   const filteredExpenses = props.expenses.filter((expense) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
