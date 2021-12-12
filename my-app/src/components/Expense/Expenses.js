@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 import ExpenseFilter from "./ExpenseFilter";
 import { useState } from "react";
 import ExpensesList from "./ExpensesList";
+import ExpenseChart from "./ExpenseChart";
 
 // If you ever get stuck for finding the path then type ./
 // as soon as you type / Visual studio code will show you the all the js file present in that directry
@@ -38,6 +39,7 @@ const Expenses = (props) => {
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
+      <ExpenseChart expenses={filteredExpenses}/>
       <ExpensesList filteredContent={filteredExpenses}/>
       {/* {expenseContent} */}
       {/* below method can also be used as the JS logic evaluated the logic like if the first part of the condition is correct then render the part after the && */}

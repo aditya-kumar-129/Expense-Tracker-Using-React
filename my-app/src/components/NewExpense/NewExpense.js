@@ -3,8 +3,7 @@ import ExpenseForm from "./ExpenseForm";
 import "./NewExpense.css";
 
 const NewExpense = (props) => {
-
-  const [openNewExpenseBox, closeNewExpenseBox] = useState(false);    //Initial value is false because we want the user to click on 'add more expense' button when the user opens the web
+  const [openNewExpenseBox, closeNewExpenseBox] = useState(false); //Initial value is false because we want the user to click on 'add more expense' button when the user opens the web
 
   const newExpenseDataHandler = (newExpenseData) => {
     const expenseData = {
@@ -25,7 +24,8 @@ const NewExpense = (props) => {
 
   // I have used the concept of storing the value the JSX code in a Variable
   let contentToBeDispalyed;
-  if (openNewExpenseBox === true) {   // if the variable is true it means that the user has to enter the input
+  if (openNewExpenseBox === true) {
+    // if the variable is true it means that the user has to enter the input
     contentToBeDispalyed = (
       <ExpenseForm
         onNewExpenseData={newExpenseDataHandler}
@@ -34,9 +34,7 @@ const NewExpense = (props) => {
     );
   } else {
     contentToBeDispalyed = (
-      <button onClick={openExpenseForm}>
-        Add new Expense
-      </button>
+      <button onClick={openExpenseForm}>Add new Expense</button>
     );
   }
 
