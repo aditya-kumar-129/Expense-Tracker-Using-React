@@ -1,7 +1,9 @@
+import AddUsers from "./components/Users/AddUsers";
+
 function App() {
   return (
     <div className="App">
-      <p>hello there</p>
+      <AddUsers/>
     </div>
   );
 }
