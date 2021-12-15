@@ -1,9 +1,9 @@
-import './App.css';
+import AddUsers from "./Components/Users/AddUsers";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello there how are u all</h1>
+      <AddUsers />
     </div>
   );
 }
