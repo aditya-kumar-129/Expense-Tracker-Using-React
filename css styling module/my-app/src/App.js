@@ -9,7 +9,6 @@ const App = () => {
   ]);
 
   const addGoalHandler = (enteredText) => {
-    if (enteredText.length > 0) {
       setCourseGoals((prevGoals) => {
         // The unshift() method is used to add one or more elements to the beginning of the given array
         const updatedGoals = [...prevGoals];
@@ -19,7 +18,6 @@ const App = () => {
         });
         return updatedGoals;
       });
-    }
   };
 
   const deleteItemHandler = (goalId) => {
