@@ -7,7 +7,6 @@ const App = () => {
     { text: "Do all exercises!", id: "g1" },
     { text: "Finish the course!", id: "g2" },
   ]);
-  console.log(courseGoals);
 
   const addGoalHandler = (enteredText) => {
     if (enteredText.length > 0) {
