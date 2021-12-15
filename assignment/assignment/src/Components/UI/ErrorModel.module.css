@@ -1,9 +1,9 @@
 .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  position: fixed; /*this attribute helps in having a view of background UI */
+  top: 0; /*top is used so that whatever height is being applied it will be from top of the viewing screen*/
+  left: 0;/*width is used so that whatever height is being applied it will be from left side of the viewing screen*/
+  width: 100%;  /*width and height attribute helps in making the how much bakground sould be not working*/
+  height: 100vh; 
   z-index: 10;
   background: rgba(0, 0, 0, 0.75);
 }
