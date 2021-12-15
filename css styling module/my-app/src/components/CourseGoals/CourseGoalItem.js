@@ -1,4 +1,4 @@
-import "./CourseGoalItem.css";
+import styles from  "./CourseGoalItem.module.css";
 // Here i have to use props because I have to take the inputs from the CourseGoalList.js
 const CourseGoalItem = (props) => {
   const deleteHandler = () => {
@@ -6,7 +6,7 @@ const CourseGoalItem = (props) => {
   };
 
   return (
-    <li className="goal-item" onClick={deleteHandler}>
+    <li className={styles['goal-item']} onClick={deleteHandler}>
       {props.children}
     </li>
   );

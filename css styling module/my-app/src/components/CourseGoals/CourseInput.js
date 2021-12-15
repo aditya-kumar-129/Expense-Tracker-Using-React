@@ -1,4 +1,4 @@
-import "./CourseInput.css";
+import styles from "./CourseInput.module.css";
 import { useState } from "react";
 // Here we need props so that we can pass the data to the app.js where the data is d=being added to the array
 const CourseInput = (props) => {
@@ -21,7 +21,7 @@ const CourseInput = (props) => {
 
   return (
     <form onSubmit={formSubmitHandler}>
-      <div className={`form-control ${!isValid ? 'invalid' :''}`}>
+      <div className={`${styles['form-control']} ${!isValid && styles.invalid}`}>
         <label>Course Goal</label>
         <input
           type="text"
@@ -29,7 +29,7 @@ const CourseInput = (props) => {
           onChange={goalInputChangeHandler}
         />
       </div>
-      <button className="button" type="submit">
+      <button className={styles.button} type="submit">
         Add Goal
       </button>
     </form>
