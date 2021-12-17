@@ -5,7 +5,13 @@ import Button from "./Button";
 const ErrorModel = (props) => {
   return (
     <div>
-      <div className={styles.backdrop} />
+      {/* When you use the below line then in that case when u click 
+      on the backdrop space the rror message will automatically go  */}
+      <div className={styles.backdrop} onClick={props.onConfirm} />
+      {/* When you use the below line then in that case when u click only on the 
+      button that appear in the error message then only the error message will go */}
+      {/* <div className={styles.backdrop} /> */}
+
       <Card className={styles.modal}>
         <header className={styles.header}>
           <h2>{props.title}</h2>
