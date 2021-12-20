@@ -30,8 +30,13 @@ const DUMMY_MEALS = [
 
 const AvailableMeals = () => {
   const mealsList = DUMMY_MEALS.map((x) => (
-    <MealItem key={x.id} name={x.name} description={x.description} price={x.price}>
-    </MealItem>
+    <MealItem
+      id={x.id}
+      key={x.id}
+      name={x.name}
+      description={x.description}
+      price={x.price}
+    />
   ));
   return (
     <section className={styles.meals}>
