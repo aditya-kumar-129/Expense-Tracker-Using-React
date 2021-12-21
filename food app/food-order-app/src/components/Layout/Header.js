@@ -2,7 +2,6 @@ import foodimage from "../../assets/meals.jpg";
 import styles from "../Layout/Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 const Header = (props) => {
-  console.log(props);
   return (
     <div>
       <header className={styles.header}>

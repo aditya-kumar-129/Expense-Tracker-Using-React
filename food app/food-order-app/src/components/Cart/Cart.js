@@ -8,10 +8,11 @@ const Cart = (props) => {
         <li>{x.name}</li>
       ))}
     </ul>
+    
   );
 
   return (
-    <Modal>
+    <Modal onClose={props.onClose}>
       {cartItems}
       <div className={styles.total}>
         <span>Total Amount</span>
@@ -24,5 +25,7 @@ const Cart = (props) => {
     </Modal>
   );
 };
+
+
 
 export default Cart;
